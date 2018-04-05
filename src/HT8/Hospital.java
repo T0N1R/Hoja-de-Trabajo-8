@@ -22,4 +22,12 @@ public class Hospital {
         Paciente nuevoPaciente = new Paciente(nombre, sintoma, codigoEmergencia);
         this.pacientes.add(nuevoPaciente);
     }
+    
+    public void mostrarPrimero(){
+        System.out.println(pacientes.get(0));
+    }
+    
+    public void mostrarCola(){
+        
+    }
 }
