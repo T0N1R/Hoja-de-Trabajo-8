@@ -28,11 +28,6 @@ public class Main {
             
             switch(opcion){
                 
-                case 0:{
-                    
-                    break;
-                }
-                
                 case 1:{
                     
                     break;
@@ -52,6 +47,7 @@ public class Main {
                     
                     break;
                 }
+                
             }
         }
         
