@@ -44,7 +44,6 @@ public class Main {
                     System.out.println("Se ha ingresado el paciente a la cola");
                     System.out.println("-------------------------------------");
                     System.out.println("-------------------------------------");
-                    
                     break;
                 }
                 
