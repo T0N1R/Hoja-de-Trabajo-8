@@ -6,17 +6,18 @@
 package HT8;
 
 import java.util.ArrayList;
+import java.util.Vector;
 
 /**
  *
  * @author esteb
  */
 public class Hospital {
-    private ArrayList<Paciente> pacientes;
+    private Vector<Paciente> pacientes;
     private VectorHeap ordenPrioridad;
     
     public Hospital(){
-        this.pacientes = new ArrayList<Paciente>();
+        this.pacientes = new Vector<Paciente>();
         this.ordenPrioridad = new VectorHeap();
     }
     
