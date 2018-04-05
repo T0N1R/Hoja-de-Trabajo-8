@@ -17,4 +17,9 @@ public class Hospital {
     public Hospital(){
         this.pacientes = new ArrayList<Paciente>();
     }
+    
+    public void registrarPaciente(String nombre, String sintoma, char codigoEmergencia){
+        Paciente nuevoPaciente = new Paciente(nombre, sintoma, codigoEmergencia);
+        this.pacientes.add(nuevoPaciente);
+    }
 }
