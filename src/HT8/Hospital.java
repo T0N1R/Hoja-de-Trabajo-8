@@ -13,9 +13,11 @@ import java.util.ArrayList;
  */
 public class Hospital {
     private ArrayList<Paciente> pacientes;
+    private VectorHeap ordenPrioridad;
     
     public Hospital(){
         this.pacientes = new ArrayList<Paciente>();
+        this.ordenPrioridad = new VectorHeap();
     }
     
     public void registrarPaciente(String nombre, String sintoma, char codigoEmergencia){
