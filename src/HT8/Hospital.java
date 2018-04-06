@@ -27,9 +27,10 @@ public class Hospital {
     }
     
     public void mostrarPrimero(){
-        System.out.println("Nombre: " + pacientes.get(0).getNombre());
-        System.out.println("Sintoma: " + pacientes.get(0).getSintoma());
-        System.out.println("Gravedad: " + pacientes.get(0).getCodigoEmergencia());
+        System.out.println("Nombre: " + ordenPrioridad.getFirst().toString());
+        //System.out.println("Nombre: " + pacientes.get(0).getNombre());
+        //System.out.println("Sintoma: " + pacientes.get(0).getSintoma());
+        //System.out.println("Gravedad: " + pacientes.get(0).getCodigoEmergencia());
     }
     
     public void mostrarCola(){

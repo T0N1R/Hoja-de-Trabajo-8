@@ -148,5 +148,5 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>
     public Vector<E> getData(){
         return this.data;
     }
-        
+            
 }
