@@ -18,6 +18,7 @@ public class Hospital {
     
     public Hospital(){
         this.pacientes = new Vector<Paciente>();
+        
     }
     
     public void registrarPaciente(String nombre, String sintoma, char codigoEmergencia){
