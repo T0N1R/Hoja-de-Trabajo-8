@@ -9,7 +9,7 @@ package HT8;
  *
  * @author esteb
  */
-public class Paciente {
+public class Paciente implements Comparable<Paciente> {
     private String nombre;
     private String sintoma;
     private char codigoEmergencia;
@@ -30,5 +30,10 @@ public class Paciente {
     
     public char getCodigoEmergencia(){
         return this.codigoEmergencia;
+    }
+
+    @Override
+    public int compareTo(Paciente o) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
