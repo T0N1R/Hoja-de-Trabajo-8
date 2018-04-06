@@ -12,9 +12,9 @@ package HT8;
 public class Paciente implements Comparable<Paciente> {
     private String nombre;
     private String sintoma;
-    private char codigoEmergencia;
+    private String codigoEmergencia;
     
-    public Paciente(String nombre, String sintoma, char codigoEmergencia){
+    public Paciente(String nombre, String sintoma, String codigoEmergencia){
         this.nombre = nombre;
         this.sintoma = sintoma;
         this.codigoEmergencia = codigoEmergencia;
@@ -28,13 +28,12 @@ public class Paciente implements Comparable<Paciente> {
         return this.sintoma;
     }
     
-    public char getCodigoEmergencia(){
+    public String getCodigoEmergencia(){
         return this.codigoEmergencia;
     }
 
     @Override
     public int compareTo(Paciente o) {
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        return 1;
+        return  this.codigoEmergencia.compareTo(o.getCodigoEmergencia());
     }
 }

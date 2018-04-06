@@ -43,9 +43,9 @@ public class Main {
                     String sintoma = scan.nextLine();
                     System.out.println("");
                     System.out.print("Nivel de Gravedad: ");
-                    char gravedad = scan.next().charAt(0);
+                    String gravedad = scan.nextLine();
                     
-                    if(gravedad == 'A' || gravedad == 'B' || gravedad == 'C' || gravedad == 'D' || gravedad == 'E'){
+                    if(gravedad.equals("A") || gravedad.equals("B") || gravedad.equals("C") || gravedad.equals("D") || gravedad.equals("E")){
                         hospital.registrarPaciente(nombre, sintoma, gravedad);
                         System.out.println("Se ha ingresado el paciente a la cola");
                         System.out.println("-------------------------------------");

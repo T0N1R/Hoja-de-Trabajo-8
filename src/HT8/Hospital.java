@@ -21,7 +21,7 @@ public class Hospital {
         
     }
     
-    public void registrarPaciente(String nombre, String sintoma, char codigoEmergencia){
+    public void registrarPaciente(String nombre, String sintoma, String codigoEmergencia){
         Paciente nuevoPaciente = new Paciente(nombre, sintoma, codigoEmergencia);
         this.pacientes.add(nuevoPaciente);
         this.ordenPrioridad = new VectorHeap(this.pacientes);
