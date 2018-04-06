@@ -48,7 +48,7 @@ public class Main {
                 }
                 
                 case 2:{
-                    
+                    hospital.mostrarPrimero();
                     break;
                 }
                 
@@ -58,7 +58,7 @@ public class Main {
                 }
                 
                 case 4:{
-                    
+                    hospital.mostrarCola();
                     break;
                 }
                 
