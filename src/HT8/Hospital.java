@@ -33,4 +33,8 @@ public class Hospital {
     public void mostrarCola(){
         this.ordenPrioridad.getData();       
     }
+    
+    public void quitarPaciente(){
+        this.pacientes.remove(pacientes.get(0));
+    }
 }
