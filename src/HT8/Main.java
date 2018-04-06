@@ -26,6 +26,7 @@ public class Main {
             System.out.println("2. Paciente que debe ser atentido (solo mostrar)");
             System.out.println("3. Eliminar a paciente atendido");
             System.out.println("4. Cola de pacientes");
+            System.out.println("5. Salir");
             System.out.println("Consultar niveles de gravedad");
             int opcion = scan.nextInt();
             
@@ -59,6 +60,16 @@ public class Main {
                 
                 case 4:{
                     hospital.mostrarCola();
+                    break;
+                }
+                
+                case 5:{
+                    estado = false;
+                    break;
+                }
+                
+                default:{
+                    System.out.println("No existe la opción seleccionada");
                     break;
                 }
                 
