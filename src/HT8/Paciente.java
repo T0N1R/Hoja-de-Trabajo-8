@@ -19,4 +19,16 @@ public class Paciente {
         this.sintoma = sintoma;
         this.codigoEmergencia = codigoEmergencia;
     }
+    
+    public String getNombre(){
+        return this.nombre;
+    }
+    
+    public String getSintoma(){
+        return this.sintoma;
+    }
+    
+    public char getCodigoEmergencia(){
+        return this.codigoEmergencia;
+    }
 }
