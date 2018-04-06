@@ -29,14 +29,21 @@ public class Hospital {
     public void mostrarPrimero(){
         System.out.println("Datos del paciente prioritario:");
         Paciente pacientePrioritario;
-        pacientePrioritario = (Paciente) ordenPrioridad.getFirst();
+        pacientePrioritario = (Paciente) this.ordenPrioridad.getFirst();
         System.out.println("Nombre: " + pacientePrioritario.getNombre());
         System.out.println("Sintoma: " + pacientePrioritario.getSintoma());
         System.out.println("Gravedad: " + pacientePrioritario.getCodigoEmergencia());
     }
     
     public void mostrarCola(){
-        this.ordenPrioridad.getData();
+        Vector<Paciente> pacientesOrdenados;
+        pacientesOrdenados = (Vector<Paciente>) this.ordenPrioridad.getData();
+        for (int i = 0; i < pacientesOrdenados.size(); i++){
+            System.out.println("Paciente No. " + String.valueOf(i + 1));
+            System.out.println("Nombre: " + pacientesOrdenados.get(i).getNombre());
+            System.out.println("Sintoma: " + pacientesOrdenados.get(i).getSintoma());
+            System.out.println("Gravedad: " + pacientesOrdenados.get(i).getCodigoEmergencia());
+        }
     }
     
     public void quitarPaciente(){
