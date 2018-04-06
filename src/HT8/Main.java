@@ -69,11 +69,11 @@ public class Main {
                 }
                 
                 case 5:{
-                    System.out.println("A: ");
-                    System.out.println("B: ");
-                    System.out.println("C: ");
-                    System.out.println("D: ");
-                    System.out.println("E: ");
+                    System.out.println("A: REANIMACION");
+                    System.out.println("B: EMERGENCIA");
+                    System.out.println("C: URGENTE");
+                    System.out.println("D: MENOS URGENTE");
+                    System.out.println("E: NO URGENTE");
                     break;
                 }
                 
