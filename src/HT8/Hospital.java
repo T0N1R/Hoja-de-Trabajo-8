@@ -48,6 +48,7 @@ public class Hospital {
     
     public void quitarPaciente(){
         this.pacientes.remove(pacientes.get(0));
+        this.ordenPrioridad.remove();
     }
     
     
