@@ -18,12 +18,12 @@ public class Hospital {
     
     public Hospital(){
         this.pacientes = new Vector<Paciente>();
-        this.ordenPrioridad = new VectorHeap();
     }
     
     public void registrarPaciente(String nombre, String sintoma, char codigoEmergencia){
         Paciente nuevoPaciente = new Paciente(nombre, sintoma, codigoEmergencia);
         this.pacientes.add(nuevoPaciente);
+        this.ordenPrioridad = new VectorHeap(this.pacientes);
     }
     
     public void mostrarPrimero(){
