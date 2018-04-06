@@ -45,11 +45,18 @@ public class Main {
                     System.out.print("Nivel de Gravedad: ");
                     char gravedad = scan.next().charAt(0);
                     
-                    hospital.registrarPaciente(nombre, sintoma, gravedad);
+                    if(gravedad == 'A' || gravedad == 'B' || gravedad == 'C' || gravedad == 'D' || gravedad == 'E'){
+                        hospital.registrarPaciente(nombre, sintoma, gravedad);
+                        System.out.println("Se ha ingresado el paciente a la cola");
+                        System.out.println("-------------------------------------");
+                        System.out.println("-------------------------------------");
+                    } else{
+                        System.out.println("-------------------------------------");
+                        System.out.println("El nivel de gravedad elegido no es valido, presione 5 para consultar los niveles de gravedad ");
+                        System.out.println("-------------------------------------");
+                    }
                     
-                    System.out.println("Se ha ingresado el paciente a la cola");
-                    System.out.println("-------------------------------------");
-                    System.out.println("-------------------------------------");
+                    
                     break;
                 }
                 
