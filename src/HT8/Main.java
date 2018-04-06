@@ -42,8 +42,7 @@ public class Main {
                     System.out.print("Sintoma: ");
                     String sintoma = scan.nextLine();
                     System.out.println("");
-                    System.out.print("Nivel de Gravedad");
-                    System.out.println("");
+                    System.out.print("Nivel de Gravedad: ");
                     char gravedad = scan.next().charAt(0);
                     
                     hospital.registrarPaciente(nombre, sintoma, gravedad);

@@ -27,7 +27,9 @@ public class Hospital {
     }
     
     public void mostrarPrimero(){
-        System.out.println(pacientes.get(0));
+        System.out.println("Nombre: " + pacientes.get(0).getNombre());
+        System.out.println("Sintoma: " + pacientes.get(0).getSintoma());
+        System.out.println("Gravedad: " + pacientes.get(0).getCodigoEmergencia());
     }
     
     public void mostrarCola(){
@@ -37,4 +39,6 @@ public class Hospital {
     public void quitarPaciente(){
         this.pacientes.remove(pacientes.get(0));
     }
+    
+    
 }
