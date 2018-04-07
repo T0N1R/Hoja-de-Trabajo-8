@@ -16,17 +16,29 @@ public class Hospital {
     private Vector<Paciente> pacientes;
     private VectorHeap ordenPrioridad;
     
+    /**
+     *Este metodo es el constructor de la clase en donde se instancia el vector de tipo paciente.
+     */
     public Hospital(){
         this.pacientes = new Vector<Paciente>();
         
     }
     
+    /**
+     *
+     * @param nombre pasa el nombre del paciente.
+     * @param sintoma descripcion de lo que siente el paciente.
+     * @param codigoEmergencia codigo de emergencia que determina el que maneja el programa para catalogar el nivel de prioridad.
+     */
     public void registrarPaciente(String nombre, String sintoma, String codigoEmergencia){
         Paciente nuevoPaciente = new Paciente(nombre, sintoma, codigoEmergencia);
         this.pacientes.add(nuevoPaciente);
         this.ordenPrioridad = new VectorHeap(this.pacientes);
     }
     
+    /**
+     *Muestra el paciente prioritario.
+     */
     public void mostrarPrimero(){
         System.out.println("Datos del paciente prioritario:");
         Paciente pacientePrioritario;
@@ -36,6 +48,9 @@ public class Hospital {
         System.out.println("Gravedad: " + pacientePrioritario.getCodigoEmergencia());
     }
     
+    /**
+     *Muestra la lista completa en orden de los pacientes.
+     */
     public void mostrarCola(){
         Vector<Paciente> pacientesOrdenados;
         pacientesOrdenados = (Vector<Paciente>) this.ordenPrioridad.getData();
@@ -47,6 +62,9 @@ public class Hospital {
         }
     }
     
+    /**
+     *Remueve el paciente prioritario luego de ser atendido.
+     */
     public void quitarPaciente(){
         this.pacientes.remove(pacientes.get(0));
         this.ordenPrioridad.remove();
